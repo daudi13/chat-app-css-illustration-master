@@ -8,6 +8,12 @@
   
   <title>Frontend Mentor | [Challenge Name Here]</title>
 
+  <link rel="stylesheet" href="./CSS/style.css">
+
+  <!-- ===font awesome cdn==== -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css"
+    integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
+
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
     .attribution { font-size: 11px; text-align: center; }
@@ -16,60 +22,64 @@
 </head>
 <body>
   <div class="container">
+
+    <!-- the iphone section -->
     <div class="iphone">
       <div class="iphone__notch">
       </div>
       <div class="iphone__screen">
         <div class="user-id">
-          <!-- chevron -->
+          <div class="chevron"><i class="fas fa-chevron-left"></i></div>
           <div class="user-id__profile">
             <img src="./images/avatar.jpg" alt="Image of samule">
             <div class="user-id__tag">
               <h3 class="user--name">Samuel Green</h3>
               <p class="user--online">Available to walk</p>
             </div>
-            <!-- kebab menu -->
           </div>
+          <i class="fas fa-ellipsis-v"></i>
         </div>
-        <div class="iphone__chapbox">
+        <div class="iphone__chatbox">
           <div class="chat">
             <p class="chat__text">That sounds great. I’d be happy with that.</p>
           </div>
           <div class="chat">
             <p class="chat__text">Could you send over some pictures of your dog, please?</p>
           </div>
-          <div class="chat reply">
+          <div class="reply">
+            <div class="chat__box chat--one">
             <img src="./images/dog-image-1.jpg" alt="">
             <img src="./images/dog-image-2.jpg" alt="">
             <img src="./images/dog-image-3.jpg" alt="">
+            </div>
           </div>
-          <div class="chat reply">
-            <p class="chat__text">
-              Here are a few pictures. She’s a happy girl!
+          <div class="reply">
+            <div class="chat__box chat--two">
+            <p class="chat__text">Here are a few pictures. She’s a happy girl!
             </p>
+            </div>
           </div>
-          <div class="chat reply">
+          <div class="reply">
+            <div class="chat__box chat--three">
             <p class="chat__text">
               Can you make it?
             </p>
+            </div>
           </div>
           <div class="chat">
             <p class="chat__text">She looks so happy. The time we discussed works. How long shall I take her out for?.</p>
           </div>
-          <div class="chat chat--violet">
+          <div class="chat--violet">
             <div class="circle"></div>
-            <p>30 minute walk</p>
-            <h2>$29</h2>
+            <div class="txt">
+              <p>1 hour walk</p>
+            </div>
+            <span>$29</span>
           </div>
-          <div class="chat chat--violet">
+          <div class="chat--violet">
             <div class="circle"></div>
-            <p>30 minute walk</p>
-            <h2>$29</h2>
-          </div>
-          <div class="chat chat--violet">
-            <div class="circle"></div>
-            <p> 1 hour walk</p>
-            <h2>$49</h2>
+            <div class="txt"><p>1 hour walk</p></div>
+            <span>$49</span>
           </div>
           <div class="type-section">
             <p class="placeholder">Type a message</p>
@@ -78,19 +88,20 @@
           </div>
         </div>
       </div>
-    </div>
-    <div class="info">
-      <h1 class="info__heading">Simple booking</h1>
-      <p class="info__desc">
-        Stay in touch with our dog walkers through the chat interface. This makes it easy to
-        discuss arrangements and make bookings. Once the walk has been completed you can rate
-        your walker and book again all through the chat.
-      </p>
+      <!-- the intro -->
+      <div class="info">
+        <h1 class="info__heading">Simple booking</h1>
+        <p class="info__desc">
+          Stay in touch with our dog walkers through the chat interface. This makes it easy to
+          discuss arrangements and make bookings. Once the walk has been completed you can rate
+          your walker and book again all through the chat.
+        </p>
+      </div>
     </div>
     
-  <div class="attribution">
+  <!-- <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="#">Your Name Here</a>.
-  </div>
+  </div> -->
 </body>
 </html>
