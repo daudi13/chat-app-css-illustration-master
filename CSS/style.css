@@ -86,8 +86,8 @@ img {
     margin-right: 6px;
 }
 
-.user-id__tag {
-}
+/* .user-id__tag {
+} */
 
 .user-id__tag h3 {
     font-weight: 500;
@@ -202,3 +202,32 @@ img {
     font-size: 8px;
 }
 
+.type-section {
+    background-color: var(--white);
+    padding: 3px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#placeholder .placeholder {
+    font-size: 8px;
+    color: var(--dark-grayish-violet);
+}
+
+.iphone__chatbox .chat ,
+.iphone__chatbox .reply {
+    margin-top: 5px;
+}
+
+.iphone__chatbox .chat:last-child {
+    margin-bottom : 6px
+}
+
+.iphone__chatbox .chat--violet:not(:last-child){
+    margin-bottom: 8px;
+}
+
+.iphone__chatbox .chat--violet:last-child {
+    margin-bottom: 10px;
+} 
