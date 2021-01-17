@@ -22,6 +22,7 @@
     --light-grayish-violet: hsl(270, 20%, 96%);
     --very-dark-desaturated-violet: hsl(271, 36%, 24%);
     --very-light-magneta: hsl(289, 100%, 72%);
+    --very-very-light-magneta: hsl(289, 40%, 84%);
 }
 
 /* default */ 
@@ -37,6 +38,7 @@
 body {
     font-family: 'Rubik', sans-serif;
     height: 100vh;
+    background-color: var(--light-grayish-violet);
 }
 
 img {
@@ -49,23 +51,34 @@ img {
     justify-content: center;
     align-items: center;
     padding: 3rem 2rem;
+    background-color: purple;
+    background-size: 50%;
 }
 
 /* the screen(the retina display) */
 /* top of app */
 
+.iphone {
+    padding: 10px;
+    background-color: white;
+    border-radius: 22px;
+}
+
 .iphone__screen {
     background-color: var(--light-grayish-violet);
     width: 36vh;
+    border-radius: 20px;
 }
+
 
 .user-id {
     background: var(--light-magneta);
-    padding: 10px;
+    padding: 20px 10px 10px 10px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     width: 100%;
+    border-radius: 20px 20px 0 0;
 }
 
 .user-id__profile {
@@ -133,6 +146,8 @@ img {
     display: flex;
     justify-content: flex-start;
     width: 75%;
+    background-color: var(--very-very-light-magneta);
+    border-radius: 8px 8px 8px 4px;
 }
 
 .chat__text {
@@ -151,6 +166,7 @@ img {
     justify-content: space-between;
     background-color: white;
     padding: 5px;
+    border-radius: 8px 8px 4px 8px;
 }
 
 .chat--one {
@@ -178,6 +194,7 @@ img {
     align-items: center;
     justify-content: space-between;
     padding: 7px;
+    border-radius: 8px 8px 8px 4px;
 }
 
 .chat--violet p {
@@ -204,10 +221,12 @@ img {
 
 .type-section {
     background-color: var(--white);
-    padding: 3px;
+    padding: 3px 3px 3px 10px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    border-radius: 10px;
+
 }
 
 #placeholder .placeholder {
@@ -220,14 +239,21 @@ img {
     margin-top: 5px;
 }
 
-.iphone__chatbox .chat:last-child {
+.iphone__chatbox .last {
     margin-bottom : 6px
 }
 
 .iphone__chatbox .chat--violet:not(:last-child){
-    margin-bottom: 8px;
+    margin-bottom: 7px;
 }
 
 .iphone__chatbox .chat--violet:last-child {
     margin-bottom: 10px;
 } 
+
+.chat--violet span {
+    font-size: 12px;
+    color: var(--white);
+}
+
+
